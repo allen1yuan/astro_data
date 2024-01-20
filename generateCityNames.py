@@ -1,8 +1,5 @@
-from opencage.geocoder import OpenCageGeocode
 import pandas as pd
 import csv
-key = "777b0b23e521498eacfdb902c79539f3"
-geocoder = OpenCageGeocode(key)
 team_dict = {
     'ARI': 'Arizona Diamondbacks',
     'ATL': 'Atlanta Braves',
@@ -64,7 +61,7 @@ city_dict = {
     'San Francisco Giants': 'San Francisco CA',
     'Seattle Mariners': 'Seattle WA',
     'St. Louis Cardinals': 'St. Louis MO',
-    'Tampa Bay Rays': 'Tampa Bay FL',
+    'Tampa Bay Rays': 'St. Petersburg FL',
     'Texas Rangers': 'Arlington TX',
     'Toronto Blue Jays': 'Toronto ON',
     'Washington Nationals': 'Washington DC'
