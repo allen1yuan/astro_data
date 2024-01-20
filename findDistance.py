@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 from opencage.geocoder import OpenCageGeocode
 from geopy.distance import geodesic
-df = pd.read_csv('datathon_2024_dataset.csv')
+df = pd.read_csv('data.csv')
 
 
 def findDistance(lat_A, lng_A, lat_B, lng_B):
@@ -23,4 +23,4 @@ for i in range(len(df['Away City Latitude'])):
 df.insert(15, 'DistanceKM', distances)
 
 
-df.to_csv('datathon_2024_dataset.csv', index=False)
+df.to_csv('data.csv', index=False)

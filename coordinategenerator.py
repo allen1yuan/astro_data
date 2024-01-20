@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 key = "777b0b23e521498eacfdb902c79539f3"
 geocoder = OpenCageGeocode(key)
-df = pd.read_csv('datathon_2024_dataset.csv')
+df = pd.read_csv('data.csv')
 index = df.columns.get_loc('Away City')
 lats = []
 lngs = []
@@ -33,10 +33,10 @@ for city in df['Away City']:
 df.insert(5, 'Away City Latitude', final_lats)
 df.insert(6, 'Away City Longitude', final_lngs)
 
-df.to_csv('datathon_2024_dataset.csv', index=False)
+df.to_csv('data.csv', index=False)
 
 df = pd.DataFrame()
-df = pd.read_csv('datathon_2024_dataset.csv')
+df = pd.read_csv('data.csv')
 homeIndex = df.columns.get_loc('city')
 foundCity = False
 
@@ -62,4 +62,4 @@ for city in df['city']:
 
 df.insert(11, 'Home City Latitude', final_home_lats)
 df.insert(12, 'Home City Longitude', final_home_lngs)
-df.to_csv('datathon_2024_dataset.csv', index=False)
+df.to_csv('data.csv', index=False)

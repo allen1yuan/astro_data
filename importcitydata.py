@@ -32,10 +32,10 @@ CityAbbrvDict = {
     'TEX': 'Arlington TX',
     'TOR': 'Toronto ONT',
     'WAS': 'Washington DC',
-    'MIA': 'St. Petersburg FL',
+    'MIA': 'Miami FL',
 
 }
-df = pd.read_csv('datathon_2024_dataset.csv')
+df = pd.read_csv('data.csv')
 new_column = df['away_team'].map(CityAbbrvDict)
 df.insert(4, 'Away City', new_column)
-df.to_csv('datathon_2024_dataset.csv', index=False)
+df.to_csv('data.csv', index=False)
