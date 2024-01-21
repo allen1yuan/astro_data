@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 key = "777b0b23e521498eacfdb902c79539f3"
 geocoder = OpenCageGeocode(key)
-df = pd.read_csv('data.csv')
+df = pd.read_csv('datathon_2024_dataset.csv')
 index = df.columns.get_loc('Away City')
 lats = []
 lngs = []
